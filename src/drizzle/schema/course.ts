@@ -11,7 +11,7 @@ export const CourseTable = pgTable("courses", {
     updatedAt,
 })
 
-export const ProductTableRelations = relations(CourseTable,
+export const CourseRelationships = relations(CourseTable,
     ({  many }) => ({
     courseProducts: many(CourseProductTable),
 }))
